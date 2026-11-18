@@ -79,6 +79,41 @@
     .botanical-shadow {
       box-shadow: 0 18px 45px -22px rgba(73, 56, 60, 0.24);
     }
+    .brand-logo-wrap {
+      width: 118px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      overflow: hidden;
+    }
+    .brand-logo-wrap img {
+      width: 118px;
+      height: 56px;
+      object-fit: contain;
+      object-position: left center;
+      background: transparent;
+    }
+    @media (min-width: 640px) {
+      .brand-logo-wrap {
+        width: 168px;
+        height: 68px;
+      }
+      .brand-logo-wrap img {
+        width: 168px;
+        height: 68px;
+      }
+    }
+    @media (min-width: 1024px) {
+      .brand-logo-wrap {
+        width: 190px;
+        height: 68px;
+      }
+      .brand-logo-wrap img {
+        width: 190px;
+        height: 68px;
+      }
+    }
     #shop-blooms .aspect-\[4\/5\] {
       aspect-ratio: 1 / 1;
     }
@@ -181,16 +216,16 @@
 <header class="sticky top-0 z-40 bg-surface dark:bg-surface bg-surface-container-low dark:bg-surface-container-high transition-all border-none">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16 flex items-center justify-between h-16 sm:h-20 w-full">
 <!-- Brand Logo / Identity -->
-<div class="flex flex-col min-w-0">
-<a aria-label="ANYVISH BLOSSOMS home" class="inline-flex items-center" href="#">
-<img alt="Anyvish Blossoms" class="block h-12 sm:h-[68px] w-auto max-w-[190px] sm:max-w-[270px] object-contain object-left" decoding="async" height="1376" src="assets/anyvish-logo.png" width="1376"/>
+<div class="flex flex-col min-w-0 shrink-0">
+<a aria-label="ANYVISH BLOSSOMS home" class="brand-logo-wrap" href="#">
+<img alt="Anyvish Blossoms" class="object-contain" decoding="async" height="1376" src="assets/anyvish-logo.png" width="1376"/>
 </a>
 <span class="font-label-caps text-[9px] tracking-[0.25em] text-outline uppercase -mt-1 hidden sm:block">
           Handmade flowers in Indore
         </span>
 </div>
 <!-- Navigation Links (Desktop) -->
-<nav aria-label="Main menu" class="hidden lg:flex items-center gap-8 font-label-caps text-label-caps tracking-widest uppercase">
+<nav aria-label="Main menu" class="hidden lg:flex items-center gap-5 xl:gap-8 font-label-caps text-label-caps tracking-widest uppercase">
 <a class="text-primary dark:text-primary-fixed border-b border-primary dark:border-primary-fixed pb-1 hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#shop-blooms">Shop</a>
 <a class="text-on-surface-variant dark:text-outline pb-1 hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#signature-bouquets">Bouquets</a>
 <a class="text-on-surface-variant dark:text-outline pb-1 hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#custom-builder">Create</a>
